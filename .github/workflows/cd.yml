@@ -1,0 +1,61 @@
+name: Neodynium CD Pipeline
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: Build Neodynium Installer
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build executable
+        run: pyinstaller --noconsole --name "Neodynium" --icon=icon.ico neodynium/main.py
+
+      - name: Install NSIS
+        uses: joncloud/makensis-action@v4
+
+      - name: Build NSIS installer
+        run: makensis NeodyniumInstaller.nsi
+
+      - name: Upload installer artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: NeodyniumInstaller
+          path: NeodyniumInstaller.exe
+
+  release:
+    name: Publish Release
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: Download installer
+        uses: actions/download-artifact@v4
+        with:
+          name: NeodyniumInstaller
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: "Neodynium ${{ github.ref_name }}"
+          files: NeodyniumInstaller.exe
+          draft: false
+          prerelease: false
