@@ -16,7 +16,7 @@ jobs:
           fetch-depth: 0
 
       - name: Run AI AutoFix
-        uses: Codium-ai/codium-ai-autofix-action@v1
+        uses: intuita-ai/autofix-action@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
