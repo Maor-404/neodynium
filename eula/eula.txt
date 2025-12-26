@@ -1,0 +1,56 @@
+NEODYNIUM BROWSER  
+END USER LICENSE AGREEMENT (MIT‑STYLE)  
+Version 1.0 – December 2025
+
+By installing or using Neodynium (“Software”), you agree to the following terms.
+
+------------------------------------------------------------
+1. PERMISSION
+------------------------------------------------------------
+You are permitted to use, copy, modify, and distribute this Software for any purpose, including commercial use, provided that all copies include the following notice:
+
+“Neodynium Browser – Copyright © 2025. All rights reserved.”
+
+------------------------------------------------------------
+2. RESTRICTIONS
+------------------------------------------------------------
+You may not:
+- Misrepresent the origin of the Software.
+- Remove or alter copyright notices.
+- Use the Software for unlawful activities.
+
+Other than these restrictions, the Software is provided with minimal limitations.
+
+------------------------------------------------------------
+3. NO WARRANTY
+------------------------------------------------------------
+THE SOFTWARE IS PROVIDED “AS IS,” WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.  
+THIS INCLUDES, BUT IS NOT LIMITED TO, WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON‑INFRINGEMENT.
+
+You use the Software at your own risk.
+
+------------------------------------------------------------
+4. LIMITATION OF LIABILITY
+------------------------------------------------------------
+IN NO EVENT SHALL THE DEVELOPER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM OR IN CONNECTION WITH THE SOFTWARE OR ITS USE.
+
+------------------------------------------------------------
+5. THIRD‑PARTY CONTENT
+------------------------------------------------------------
+The Software may display or interact with third‑party websites or services.  
+The Developer is not responsible for third‑party content, privacy practices, or security.
+
+------------------------------------------------------------
+6. TERMINATION
+------------------------------------------------------------
+This Agreement terminates automatically if you violate its terms.  
+Upon termination, you must stop using the Software and delete all copies.
+
+------------------------------------------------------------
+7. ACCEPTANCE
+------------------------------------------------------------
+By installing or using Neodynium, you acknowledge that you have read and agreed to this Agreement.
+
+------------------------------------------------------------
+END OF AGREEMENT
+------------------------------------------------------------
